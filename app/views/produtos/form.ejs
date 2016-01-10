@@ -1,0 +1,34 @@
+<html>
+<body>
+    <h1>Formulario dos produtos da loja!</h1> <BR>
+      <div>
+          <% if (errosValidacao) { %>
+             <ul>
+               <% for (var i=0; i< errosValidacao.length; i++) { %>
+                 <li> <%=errosValidacao[i].param%>  - <%=errosValidacao[i].msg%> </li>
+               <% } %>
+             </ul>
+          <% } %>
+      </div>
+    <!-- <form action="/produtos/salva" method="post"> -->
+    <form action="/produtos" method="post">
+      <div>
+        <label>Titulo</label>
+        <input type="text" id="titulo" name="titulo" value="<%=produto.titulo%>" placeholder="coloque o titulo" size="60"/>
+      </div>
+      <br>
+      <div>
+        <label>Preco</label>
+        <input type="text" id="preco" name="preco" value="<%=produto.preco%>"  placeholder="coloque o preco" size="30"/>
+      </div>
+      <br>
+      <div>
+        <label>Descrição</label>
+        <textarea cols="30" rows="10" id="descricao" name="descricao" value=""
+        placeholder="coloque a descricao"><%=produto.descricao%></textarea>
+      </div>
+      <br>
+      <input type="submit" value="gravar">
+    </form>
+</body>
+</html>
