@@ -13,7 +13,7 @@ https://cdc-alessandro-nodejs1.herokuapp.com/ | https://git.heroku.com/cdc-aless
 
 
 module.exports = function() {
-  console.log('express... ');
+  console.log('express no .GIT ... ');
   var app = express();
 // middleware definido para a parte estatica
   app.use(express.static('./app/public'));//ponto relativo a casa do casadocodigo
