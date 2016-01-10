@@ -11,7 +11,10 @@ var io  = require('socket.io')(http);
 //disponibilizando o io para todas as rotas
 app.set('io', io);
 
+//se tiver essa porta definida
+var porta = process.env.PORT || 3000;
+
 //por conta do socket io podemos chamar o http diretament
-http.listen(3000, function() {
+http.listen(porta, function() {
    console.log('Servidor rodando');
 });

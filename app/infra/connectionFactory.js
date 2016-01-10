@@ -50,6 +50,8 @@ var createDBConnection = function() {
     });
   }
 
+//var urlConexao = process.env.CLEARDB_DATABASE_URL
+
 }
 
 //wrapper
