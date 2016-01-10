@@ -1,8 +1,8 @@
-$ mysql -u root
+$ mysql -u root -h localhost
 
-mysql> create database casadocodigo_nodejs
+mysql> create database casadocodigo_nodejs;
 
-mysql> use casadocodigo_nodejs
+mysql> use casadocodigo_nodejs;
 
 create table livros (
 id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -11,8 +11,8 @@ descricao text,
 preco decimal(10,2) DEFAULT NULL
 );
 
-mysql> create database casadocodigo_nodejs_test
+mysql> create database casadocodigo_nodejs_test;
 
-mysql> use casadocodigo_nodejs_test
+mysql> use casadocodigo_nodejs_test;
 
-repetir o sql
+repetir o sql de criacao da tabela
