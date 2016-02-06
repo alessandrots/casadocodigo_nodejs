@@ -13,7 +13,7 @@ module.exports = function (app){
          }
          resp.format({
              html:function(){
-               console.log('index html');
+               console.log('index html ==> ', results);
                resp.render('home/index.ejs', {livros:results});
              },
              json:function(){

@@ -1,18 +1,25 @@
-$ mysql -u root -h localhost
+  1)  Startar mysql
 
-mysql> create database casadocodigo_nodejs;
+  *** http://coolestguidesontheplanet.com/start-stop-mysql-from-the-command-line-terminal-osx-linux/
 
-mysql> use casadocodigo_nodejs;
+  2) Create the database
+  $ mysql -u root -h localhost
 
-create table livros (
-id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-titulo varchar(255) DEFAULT NULL,
-descricao text,
-preco decimal(10,2) DEFAULT NULL
-);
+  mysql> create database casadocodigo_nodejs;
 
-mysql> create database casadocodigo_nodejs_test;
+  mysql> use casadocodigo_nodejs;
 
-mysql> use casadocodigo_nodejs_test;
+  create table livros (
+  id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  titulo varchar(255) DEFAULT NULL,
+  descricao text,
+  preco decimal(10,2) DEFAULT NULL
+  );
 
-repetir o sql de criacao da tabela
+  mysql> create database casadocodigo_nodejs_test;
+
+  mysql> use casadocodigo_nodejs_test;
+
+  repetir o sql de criacao da tabela
+
+  insert into livros (titulo, descricao, preco) values('Teste', 'descricaooo', 10);
